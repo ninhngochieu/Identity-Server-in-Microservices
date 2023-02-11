@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "7fd8bc9d-1ced-494f-9024-00cb79ea4c22",
+		"name": "IdentityMicroservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10734116"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "/users/:id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "consectetur labor",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/users/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "consectetur labor",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": \"bfb99b37-bfb9-a4fd-0b65-7a18d59359c8\",\n    \"username\": \"non\",\n    \"email\": \"Lorem exercitation consequat est non\",\n    \"gil\": -16124157.17656827,\n    \"createDate\": \"2006-01-12T18:58:44.881Z\"\n  },\n  {\n    \"id\": \"4c518031-5013-b850-5805-ad7421c9123d\",\n    \"username\": \"quis\",\n    \"email\": \"velit ipsum in pariatur\",\n    \"gil\": -23314188.55908276,\n    \"createDate\": \"1975-05-08T04:54:09.585Z\"\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "/users/:id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"aute consectetur\",\n  \"gil\": -18325466.199816182\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "consectetur labor",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"email\": \"aute consectetur\",\n  \"gil\": -18325466.199816182\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/users/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "consectetur labor",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": \"bfb99b37-bfb9-a4fd-0b65-7a18d59359c8\",\n    \"username\": \"non\",\n    \"email\": \"Lorem exercitation consequat est non\",\n    \"gil\": -16124157.17656827,\n    \"createDate\": \"2006-01-12T18:58:44.881Z\"\n  },\n  {\n    \"id\": \"4c518031-5013-b850-5805-ad7421c9123d\",\n    \"username\": \"quis\",\n    \"email\": \"velit ipsum in pariatur\",\n    \"gil\": -23314188.55908276,\n    \"createDate\": \"1975-05-08T04:54:09.585Z\"\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "/users/:id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "consectetur labor",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/users/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "consectetur labor",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": \"bfb99b37-bfb9-a4fd-0b65-7a18d59359c8\",\n    \"username\": \"non\",\n    \"email\": \"Lorem exercitation consequat est non\",\n    \"gil\": -16124157.17656827,\n    \"createDate\": \"2006-01-12T18:58:44.881Z\"\n  },\n  {\n    \"id\": \"4c518031-5013-b850-5805-ad7421c9123d\",\n    \"username\": \"quis\",\n    \"email\": \"velit ipsum in pariatur\",\n    \"gil\": -23314188.55908276,\n    \"createDate\": \"1975-05-08T04:54:09.585Z\"\n  }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/users",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": \"bfb99b37-bfb9-a4fd-0b65-7a18d59359c8\",\n    \"username\": \"non\",\n    \"email\": \"Lorem exercitation consequat est non\",\n    \"gil\": -16124157.17656827,\n    \"createDate\": \"2006-01-12T18:58:44.881Z\"\n  },\n  {\n    \"id\": \"4c518031-5013-b850-5805-ad7421c9123d\",\n    \"username\": \"quis\",\n    \"email\": \"velit ipsum in pariatur\",\n    \"gil\": -23314188.55908276,\n    \"createDate\": \"1975-05-08T04:54:09.585Z\"\n  }\n]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
